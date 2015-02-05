@@ -13,4 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap-sprockets
+//= require select2
+//= require nprogress
+//= require nprogress-turbolinks
+//= require nprogress-ajax
+//= require cocoon
+//= require bootstrap-datepicker
+//= require moment
+//= require fullcalendar
+//= require select2-calls
+//= require livevalidation
+//= require jquery.validate.js

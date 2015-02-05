@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,15 +30,37 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'pg'
+gem 'simple_form'
+gem 'slim-rails'
+gem 'select2-rails'
+gem 'cocoon'
+gem 'nprogress-rails'
+gem 'kaminari'
+gem 'rails_admin'
+
+group :development do
+	gem 'byebug'
+	gem "bullet"
+	gem 'railroady'
+	gem 'letter_opener'
+	gem 'better_errors'
+	gem 'rubocop', require: false
+end
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
+	# Access an IRB console on exception pages or by using <%= console %> in views
+	# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+	gem 'spring'
+	gem 'pry-rails'
+	gem 'pry-byebug'
+	gem 'pry-rescue'
+	gem 'rspec-rails'
+	gem 'thin'
+	gem 'did_you_mean'
+	gem 'annotate'
 end
 
